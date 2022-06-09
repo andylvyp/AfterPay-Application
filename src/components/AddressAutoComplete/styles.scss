@@ -1,0 +1,113 @@
+.address-autocomplete {
+    width: 80%;
+    max-width: 750px;
+    color: black;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .autocomplete-input {
+        border: 2px solid #f5f5f5;
+        font-size: 1rem;
+        padding: 5px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0;
+
+        &:focus {
+            border: 2px solid #00817a !important;
+            outline: none;
+        }
+    }
+
+    .autocomplete-edit-container {
+        float: right;
+        margin: 5px 0 0;
+        color: #565555;
+        font-weight: 400;
+
+        .autocomplete-edit-button {
+            text-decoration: underline;
+            color: #00817a;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .autocomplete-form {
+        margin: 50px 0 0;
+
+        .input-container {
+            padding: 5px 0;
+            margin: 5px 0;
+            height: 60px;
+
+            .autocomplete-form-label {
+                display: block;
+                color: #666;
+                padding-bottom: 5px;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+
+            .autocomplete-form-input {
+                border: 2px solid #f5f5f5;
+                font-size: 1rem;
+                padding: 5px 10px;
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 0;
+                color: #565555;
+
+                &:focus {
+                    border: 2px solid #00817a !important;
+                    outline: none;
+                }
+            }
+
+            .autocomplete-form-error {
+                font-size: 12px;
+                color: #DB4D6D;
+            }
+        }
+    }
+
+    .auto-complete-result {
+        display: flex;
+        margin: 50px 0 0;
+        flex-direction: row;
+        transition: all 0.2s ease-in-out;
+
+        .auto-complete-result-text {
+            flex-basis: 50%;
+
+            .auto-complete-result-title {
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            .auto-complete-result-content {
+                font-size: 15px;
+                color: #565555;
+            }
+        }
+
+        .auto-complete-result-map {
+            flex-basis: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 420px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.autocomplete-inline-block {
+    display: flex;
+    width: 100%;
+}

@@ -1,0 +1,139 @@
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+.swiper {
+    width: 80%;
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px 0;
+    font-weight: 500;
+    user-select: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 25%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+        background: linear-gradient(90deg, #fff, hsla(0, 0, 100%, 0));
+        pointer-events: none;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        background: linear-gradient(270deg, #fff, hsla(0, 0%, 100%, 0));
+        pointer-events: none;
+    }
+
+    .swiper-slide {
+        width: 100px;
+        min-height: 100px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.75rem;
+        background: transparent;
+        transition: opacity .5s ease-in;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #474747;
+
+        .swiper-element-wrapper {
+            width: 100%;
+            transition: opacity .5s ease-in;
+        }
+    }
+
+    .swiper-slide-active {
+        font-size: 2.5rem;
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next {
+        font-size: 2rem;
+    }
+
+    .swiper-text-top {
+        font-size: .875rem;
+        text-align: center;
+        position: absolute;
+        top: calc(25% - 1rem);
+        left: 0;
+        right: 0;
+    }
+
+    .swiper-text-bottom {
+        font-size: 1.2rem;
+        margin-top: calc(1.2rem - 45px);
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+.swiper-summary {
+    position: relative;
+    width: 80%;
+    max-width: 750px;
+    font-weight: 500;
+    color: #474747;
+    box-shadow: 0 0 12px 0 #bbb;
+    border-radius: 6px;
+    margin: 20px auto;
+    padding: 6px 0 6px 12px;
+    cursor: pointer;
+
+    .swiper-price {
+        font-size: 1.75rem;
+    }
+
+    .swiper-text-bottom {
+        color: #474747;
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    .swiper-edit-button {
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.color-theme-green {
+    color: #00817a;
+}
+
+.color-theme-red {
+    color: #DB4D6D;
+}
+
+.color-theme-yellow {
+    color: #E9A368;
+}
+
+.border-green {
+    border-left: 6px solid #00817a;
+}
+
+.border-red {
+    border-left: 6px solid #DB4D6D;
+}
+
+.border-yellow {
+    border-left: 6px solid #E9A368;
+}
