@@ -1,5 +1,15 @@
 # AfterPay Application
+This project contains two components.
 
+* ```<SwiperSelect />```  
+```initialIndex``` is the initial value in swiper select. The data is saved in ```src\data\swiper-select.json```  
+```theme = "green" | "red" | "yellow"``` set the color scheme in component  
+```fontSize = "sm" | "md" | "lg"``` can be changed to use different font size  
+```updateValue``` can get values from the form inside component  
+
+* ```<AddressComplete />```  
+```fontSize = "sm" | "md" | "lg"``` can be changed to use different font size  
+```updateValue``` can get values from the form inside component
 ## Install
 Run ```yarn install``` to install dependencies and run ```yarn start```  
 you can find the application at ```http://localhost:3000/```
@@ -20,5 +30,7 @@ Check the components and change parameters at ```http://localhost:6006/```
 
 
 ## Caution
-* Swiper has issues in test. If you want to run test, change the import files in ```SwipeSelect/index.tsx```
+* Swiper has issues in test. If you want to run test, change the import files in ```SwipeSelect\index.tsx```
 Then run ```yarn test```
+* ```.env``` is not uploaded to the project due to safety reason. You can create ```.env``` file and add  
+```REACT_APP_GOOGLE_API_KEY=YOUR_API_KEY``` 
